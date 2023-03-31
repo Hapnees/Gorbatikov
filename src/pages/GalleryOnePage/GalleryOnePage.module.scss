@@ -1,0 +1,36 @@
+.title {
+	margin-bottom: 50px !important;
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+
+	margin-bottom: 40px;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	column-gap: 30px;
+	row-gap: 40px;
+
+	> li {
+		text-align: center;
+
+		background-color: #09263b3b;
+		border-radius: 6px;
+		box-shadow: 0 0 20px 5px #00000018;
+
+		padding: 20px;
+
+		> img {
+			width: 500px;
+			height: 300px;
+			object-fit: cover;
+
+			margin-bottom: 5px;
+		}
+	}
+}

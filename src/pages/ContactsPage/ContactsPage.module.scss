@@ -1,0 +1,52 @@
+.container {
+	font-weight: 400;
+	padding-bottom: 50px;
+}
+
+.bottomInfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.leftSide {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	> img {
+		width: 150px;
+		height: 150px;
+	}
+
+	> div > p {
+		&:nth-child(2) {
+			margin-bottom: 20px;
+		}
+
+		&:last-child {
+			text-decoration: dashed underline;
+			text-underline-offset: 10px;
+		}
+	}
+}
+
+.rightSide {
+	text-align: end;
+
+	> div:first-child {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+.callIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.number {
+	font-size: 30px;
+}

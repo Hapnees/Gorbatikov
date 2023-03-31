@@ -1,0 +1,81 @@
+.mapWrapper {
+	position: relative;
+
+	margin-bottom: 40px;
+}
+
+.map {
+	width: 1400px;
+	height: 500px;
+}
+
+.mapInfo {
+	position: absolute;
+	right: 280px;
+	top: 190px;
+	color: #000;
+	padding: 25px;
+
+	font-size: 18px;
+
+	box-shadow: 0 0 15px 5px #00000031;
+	border-radius: 6px;
+
+	backdrop-filter: blur(8px);
+	background-color: #ffffff8d;
+
+	transition: transform 0.3s;
+
+	cursor: pointer;
+
+	> p {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	> ul {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		margin-left: 20px;
+
+		> li {
+			display: flex;
+			align-items: center;
+
+			&::before {
+				content: '';
+
+				aspect-ratio: 1 / 1;
+				width: 8px;
+				border-radius: 100%;
+				background-color: #3b3b3b41;
+
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+.contactBtn {
+	position: absolute;
+
+	background-color: #fff;
+
+	font-size: 14px;
+	font-weight: 500;
+	font-family: Montserrat;
+
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #00000072;
+
+	top: 10px;
+	right: 150px;
+
+	cursor: pointer;
+
+	padding: 5px 15px;
+	z-index: 999;
+}

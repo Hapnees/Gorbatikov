@@ -1,0 +1,41 @@
+.header {
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+
+	box-shadow: 0 0 20px 5px #0000002f;
+
+	background-color: $headerBgColor;
+}
+
+.nav {
+	display: flex;
+	margin-left: 150px;
+
+	gap: 80px;
+}
+
+.list {
+	display: flex;
+
+	> li {
+		cursor: pointer;
+
+		> a {
+			display: block;
+			height: 100%;
+
+			padding: 25px 30px;
+		}
+
+		&:hover {
+			background-color: #08426b;
+		}
+	}
+}
+
+.logo {
+	left: 690px;
+	width: 74px;
+	height: 74px;
+}

@@ -1,0 +1,36 @@
+.list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+	text-align: center;
+
+	font-size: 18px;
+
+	> li {
+		background-color: #6f6be157;
+		border-radius: 4px;
+		box-shadow: 0 0 20px 5px #0000001f;
+
+		transition: background-color 0.3s;
+		padding: 30px 20px;
+
+		cursor: pointer;
+
+		&:hover {
+			background-color: #6f6be17c;
+		}
+	}
+}
+
+.img {
+	width: 350px;
+	height: 250px;
+	object-fit: cover;
+
+	margin-bottom: 25px;
+}
+
+.title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}

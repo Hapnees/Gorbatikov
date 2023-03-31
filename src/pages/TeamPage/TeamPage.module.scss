@@ -1,0 +1,44 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	gap: 60px;
+	> li {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		background-color: #092b4355;
+
+		box-shadow: 0 0 20px 5px #0000001f;
+		border-radius: 6px;
+		cursor: pointer;
+
+		transition: transform 0.3s;
+
+		padding: 20px;
+
+		> img {
+			width: 300px;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+}
+
+.info {
+	max-width: 380px;
+
+	font-size: 18px;
+
+	> p:first-child {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+}
