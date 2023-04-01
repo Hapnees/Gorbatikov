@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import {
 	FullscreenControl,
 	Map,
@@ -11,6 +11,7 @@ import cl from './ModifMap.module.scss'
 
 const ModifMap = () => {
 	const [isShowInfo, setIsShowInfo] = useState(true)
+	const mapRef = useRef<any>(null)
 
 	const mapOptions = {
 		modules: ['geocode', 'SuggestView'],

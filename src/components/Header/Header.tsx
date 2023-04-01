@@ -1,8 +1,9 @@
 import logo from '@/assets/header/logo.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import cl from './Header.module.scss'
 
 const Header = () => {
+	const navigate = useNavigate()
 	return (
 		<header className={cl.header}>
 			<nav className={cl.nav}>
@@ -18,7 +19,12 @@ const Header = () => {
 					</li>
 				</ul>
 
-				<img src={logo} alt='' className={cl.logo} />
+				<img
+					src={logo}
+					alt=''
+					className={cl.logo}
+					onClick={() => navigate('/')}
+				/>
 
 				<ul className={cl.list}>
 					<li>
